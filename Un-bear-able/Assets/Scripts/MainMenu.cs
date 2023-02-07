@@ -10,16 +10,6 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("InGame");
     }
 
-    public void mainToOptions()
-    {
-        SceneManager.LoadScene("Options");
-    }
-
-    public void optionsToMain()
-    {
-        SceneManager.LoadScene("MainMenu");
-    }
-
     public void Quit()
     {
         Application.Quit();
