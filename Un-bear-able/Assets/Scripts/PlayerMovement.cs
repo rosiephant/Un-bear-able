@@ -11,11 +11,18 @@ public class PlayerMovement : MonoBehaviour
 
     Vector2 movement;
 
+    public Vector2 lastPos;
+
     // Update is called once per frame
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
+        {
+            lastPos = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
+        }
     }
 
     void FixedUpdate()
