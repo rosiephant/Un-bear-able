@@ -2224,7 +2224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 286, y: 100}
+  m_AnchoredPosition: {x: 279, y: 100}
   m_SizeDelta: {x: 414.2371, y: 89.5469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1249216548
@@ -2247,7 +2247,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '- Hit
+  m_text: 'Left Click - Hit
+
+    (Run over items
+
+    to pick them up)
 
 '
   m_isRightToLeft: 0
@@ -2476,7 +2480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1594172699
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3081,7 +3085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 253, y: 163.60632}
+  m_AnchoredPosition: {x: 246, y: 163.60632}
   m_SizeDelta: {x: 348.0699, y: 89.5469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073047355
