@@ -18,14 +18,14 @@ public class ItemCollector : MonoBehaviour
 		{
 			Destroy(collision.gameObject);
 			stones++;
-			stonesText.text = "Stones: " + stones;
+			stonesText.text = " " + stones;
 		}
 
 		if (collision.gameObject.CompareTag("Wood"))
 		{
 			Destroy(collision.gameObject);
 			wood++;
-			woodText.text = "Wood: " + wood;
+			woodText.text = " " + wood;
 		}
 	}
 }

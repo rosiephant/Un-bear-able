@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Wood
   - Stone
+  - Door
+  - Player1
+  - Out
   layers:
   - Default
   - TransparentFX
