@@ -33,7 +33,7 @@ public class SOFurnitureDefinition : ScriptableObject
     
     public string GetName()
     {
-    return displayName;
+        return displayName;
     }
 
     public int GetCost()
