@@ -8,6 +8,7 @@ TagManager:
   - Stone
   - Door
   - Player1
+  - Out
   layers:
   - Default
   - TransparentFX
