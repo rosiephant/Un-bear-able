@@ -17,7 +17,7 @@ public abstract class FurnitureInstance : MonoBehaviour, IGroupable
     {
         DisplayName = name;
         CurrentValue = cost;
-        Type = type;
+        Type = type; 
     }
 
     public int GetValue()

@@ -24,9 +24,9 @@ public class SOFurnitureDefinition : ScriptableObject
     [SerializeField]
     private FurnitureType type;
 
-    public FurnitureInstance Spawn(Vector2 position)
+    public FurnitureInstance Spawn()
     {
-        FurnitureInstance instance = GameObject.Instantiate(prefab, position, Quaternion.identity);
+        FurnitureInstance instance = GameObject.Instantiate(prefab);
         instance.Initialize(displayName, cost, type);
         return instance;
     }
