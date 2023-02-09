@@ -4,8 +4,8 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "BearGame/FurnitureDefinition")]
 public class SOFurnitureDefinition : ScriptableObject
-
 {
+    
     public enum FurnitureType
     {
         SOFA,
@@ -24,13 +24,13 @@ public class SOFurnitureDefinition : ScriptableObject
     [SerializeField]
     private FurnitureType type;
 
-    public FurnitureInstance Spawn()
+    public FurnitureInstance Spawn(Vector2 position)
     {
-        FurnitureInstance instance = GameObject.Instantiate(prefab);
-        instance.Initialize(displayName, cost, type);
+        FurnitureInstance instance = GameObject.Instantiate(prefab, position, Quaternion.identity);
+        //instance.Initialize(displayName, cost, type);
         return instance;
     }
-    
+
     public string GetName()
     {
         return displayName;
@@ -45,4 +45,5 @@ public class SOFurnitureDefinition : ScriptableObject
     {
         return displayIcon;
     }
+
 }

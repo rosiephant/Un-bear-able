@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 864b42cb3e35745479634ec8508f5262, type: 3}
-  m_Name: Grey Sofa Definition
+  m_Name: New SO Furniture Definition
   m_EditorClassIdentifier: 
-  displayName: Grey Sofa
-  displayIcon: {fileID: 21300000, guid: dff4772074cf78f45b87697f94acd0a4, type: 3}
-  cost: 20
+  displayName: 
+  displayIcon: 
+  cost: 0
   prefab: {fileID: 0}
   type: 0
