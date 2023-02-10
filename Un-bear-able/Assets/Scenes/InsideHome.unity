@@ -3724,6 +3724,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 304bbc8bfcdbbe94ab9b91c1020592bd, type: 3}
+--- !u!1 &5177596389619345274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5177596387935506409, guid: 304bbc8bfcdbbe94ab9b91c1020592bd, type: 3}
+  m_PrefabInstance: {fileID: 5177596389619345273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5177596389619345275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5177596389619345274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 515f2e3811a303d46985cf99391a75c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sofaPrefabs:
+  - {fileID: 5177596387935506409, guid: 304bbc8bfcdbbe94ab9b91c1020592bd, type: 3}
+  - {fileID: 2890224540378801893, guid: e5094ed9bf080914089c1e14a6737bfa, type: 3}
+  - {fileID: 3391135709052319567, guid: 57b606002e4f053438b01116847039fe, type: 3}
+  - {fileID: 6027724973266189595, guid: 94d01bda2e8a4af439532c6cdca33444, type: 3}
+  - {fileID: 5353886259238822584, guid: 133a13df88b09494b826df672b7008d1, type: 3}
 --- !u!1001 &5917167239769233746
 PrefabInstance:
   m_ObjectHideFlags: 0
