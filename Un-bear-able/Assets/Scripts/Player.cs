@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 	public Inventory inventory;
-	public SpriteRenderer sr;
 
 	private void Awake()
 	{
@@ -22,6 +21,12 @@ public class Player : MonoBehaviour
 			{
 				GameManager.instance.tileManager.SetInteracted(position);
 			}
+		}
+
+
+		if (Input.GetKeyDown(KeyCode.C))
+		{
+			
 		}
 	}
 
