@@ -6,10 +6,23 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public ItemManager itemManager;
+    public TileManager tileManager;
+
     private void Awake()
     {
-        instance = this;
-    }
+        if(instance != null && instance != null)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            instance = this;
+        }
 
-    public GameObject player;
+        DontDestroyOnLoad(this.gameObject);
+
+        itemManager = GetComponent<ItemManager>();
+        tileManager = GetComponent<TileManager>();
+    }
 }
