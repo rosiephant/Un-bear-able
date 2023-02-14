@@ -3399,7 +3399,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 279, y: 100}
+  m_AnchoredPosition: {x: 269, y: 100}
   m_SizeDelta: {x: 414.2371, y: 89.5469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1249216548
@@ -3422,11 +3422,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Left Click - Hit
+  m_text: 'Space - Plow Land
 
-    (Run over items
+    Tab - Open Inventory
 
-    to pick them up)
+    Left Click - Harvest
+
+    C
+    - PLant Carrot
+
+    P - Plant Potato
+
 
 '
   m_isRightToLeft: 0
@@ -3455,8 +3461,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3524,7 +3530,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1437511692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3610,7 +3616,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 37, y: 7}
+  m_AnchoredPosition: {x: -1, y: -19}
   m_SizeDelta: {x: 1039.8046, y: 1039.7799}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1529770851
@@ -4307,7 +4313,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 860050869}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -4519,8 +4525,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4604,7 +4610,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 246, y: 163.60632}
+  m_AnchoredPosition: {x: 236, y: 163.60632}
   m_SizeDelta: {x: 348.0699, y: 89.5469}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073047355
