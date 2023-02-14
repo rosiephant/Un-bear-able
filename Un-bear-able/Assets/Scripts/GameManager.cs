@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public ItemManager itemManager;
     public TileManager tileManager;
+    public CropsManager cropsManager;
 
     public int curDay;
     public int cropInventory;
