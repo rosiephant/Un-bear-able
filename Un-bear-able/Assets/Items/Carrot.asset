@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9ed0b5ae0a3ffa4ab14ec872fb076b2, type: 3}
   m_Name: Carrot
   m_EditorClassIdentifier: 
-  itemName: Item Name
-  icon: {fileID: 0}
+  itemName: Carrot
+  icon: {fileID: 21300000, guid: 81f7a1b7c5bb11549bb4bd3bb5ed67ca, type: 3}
