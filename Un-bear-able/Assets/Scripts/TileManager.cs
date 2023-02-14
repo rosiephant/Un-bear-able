@@ -42,4 +42,5 @@ public class TileManager : MonoBehaviour
     {
         interactableMap.SetTile(position, interactedTile);
     }
-}
+
+    }

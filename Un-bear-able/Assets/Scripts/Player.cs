@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 	public Inventory inventory;
+	public SpriteRenderer sr;
 
 	private void Awake()
 	{
@@ -34,4 +35,6 @@ public class Player : MonoBehaviour
 
 		droppedItem.rb2d.AddForce(spawnOffset * 0.2f, ForceMode2D.Impulse);
 	}
+
 }
+
