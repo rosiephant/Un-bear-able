@@ -22,6 +22,12 @@ public class Player : MonoBehaviour
 				GameManager.instance.tileManager.SetInteracted(position);
 			}
 		}
+
+
+		if (Input.GetKeyDown(KeyCode.C))
+		{
+			
+		}
 	}
 
 	public void DropItem(Item item)
@@ -34,4 +40,6 @@ public class Player : MonoBehaviour
 
 		droppedItem.rb2d.AddForce(spawnOffset * 0.2f, ForceMode2D.Impulse);
 	}
+
 }
+

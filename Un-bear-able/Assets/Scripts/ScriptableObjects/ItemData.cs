@@ -7,4 +7,8 @@ public class ItemData : ScriptableObject
 {
     public string itemName = "Item Name";
     public Sprite icon;
+
+    public int daysToGrow;
+    public Sprite[] growProgressSprites;
+    public Sprite readyToHarvestSprite;
 }

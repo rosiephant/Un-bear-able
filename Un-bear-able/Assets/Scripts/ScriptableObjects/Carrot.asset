@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Item Name
   icon: {fileID: 0}
+  daysToGrow: 3
+  growProgressSprites:
+  - {fileID: 21300000, guid: 709e66cbc7ce21f4bb983796dccdd233, type: 3}
+  - {fileID: 21300000, guid: f7735078c37164244b373e7f21ed3bbd, type: 3}
+  - {fileID: 21300000, guid: 9c2800b08e8016741b43ac552a66f84e, type: 3}
+  readyToHarvestSprite: {fileID: 21300000, guid: 81f7a1b7c5bb11549bb4bd3bb5ed67ca, type: 3}
