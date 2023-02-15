@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Item : MonoBehaviour
@@ -13,4 +14,5 @@ public class Item : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
     }
+
 }
