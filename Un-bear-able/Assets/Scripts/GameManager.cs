@@ -12,24 +12,6 @@ public class GameManager : MonoBehaviour
     public TileManager tileManager;
     public CropsManager cropsManager;
 
-    public int curDay;
-    public int cropInventory;
-    public ItemData selectedCropToPlant;
-
-    public event UnityAction onNewDay;
-
-    void OnEnable()
-    {
-        Item.onPlantCrop += OnPlantCrop;
-        Item.onHarvestCrop += OnHarvestCrop;
-    }
-
-    void OnDisable()
-    {
-        Item.onPlantCrop -= OnPlantCrop;
-        Item.onHarvestCrop -= OnHarvestCrop;
-    }
-
     private void Awake()
     {
         if(instance != null && instance != null)
@@ -47,18 +29,4 @@ public class GameManager : MonoBehaviour
         tileManager = GetComponent<TileManager>();
     }
 
-    public void OnPlantCrop (ItemData item)
-    {
-        cropInventory--;
-    }
-
-    //public bool CanPlantCrop (ItemData item)
-    //{
-       // Debug.Log("ERROR");
-    //}
-
-    public void OnHarvestCrop (ItemData item)
-    {
-
-    }
 }
