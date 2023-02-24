@@ -8,6 +8,7 @@ public class CharacterController2D : MonoBehaviour
     Rigidbody2D rigidbody2d;
     [SerializeField] float speed = 2f;
     Vector2 motionVector;
+    public Vector2 lastMotionVector;
 
     // Start is called before the first frame update
     void Awake()
@@ -18,10 +19,18 @@ public class CharacterController2D : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+
         motionVector = new Vector2(
-            Input.GetAxisRaw("Horizontal"),
-            Input.GetAxisRaw("Vertical")
+            horizontal,
+            vertical
             );
+
+        if (horizontal != 0 || vertical != 0)
+        {
+            lastMotionVector = new Vector2(horizontal, vertical).normalized;
+        }
     }
 
     void FixedUpdate()
