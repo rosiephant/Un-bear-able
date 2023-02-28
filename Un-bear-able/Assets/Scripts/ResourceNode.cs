@@ -26,6 +26,7 @@ public class ResourceNode : ToolHit
             
             ItemSpawnManager.instance.SpawnItem(position, item, itemCountInOneDrop);
         }
+
         Destroy(gameObject);
     }
 

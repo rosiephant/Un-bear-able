@@ -9848,6 +9848,7 @@ MonoBehaviour:
   player: {fileID: 1651959203}
   inventoryContainer: {fileID: 11400000, guid: a4a9cdb30ced6f249857d64209b43cf9, type: 2}
   dragAndDropController: {fileID: 2107066372}
+  timeController: {fileID: 2107066371}
 --- !u!4 &2107066369
 Transform:
   m_ObjectHideFlags: 0
@@ -9942,6 +9943,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   dayLightColor: {r: 1, g: 1, b: 1, a: 1}
   timeScale: 600
+  startAtTime: 28800
   text: {fileID: 1486390171}
   globalLight: {fileID: 1884938690}
 --- !u!114 &2107066372
@@ -10002,6 +10004,7 @@ MonoBehaviour:
   plowed: {fileID: 11400000, guid: ea2a23f556886d543bdbe3cae5bac38c, type: 2}
   seeded: {fileID: 11400000, guid: 17ef00a198f4823408688fc21a3fc3cf, type: 2}
   targetTilemap: {fileID: 267935600}
+  cropsSpritePrefab: {fileID: 5832378316230730945, guid: 380d65eb1d8895a48981d75cbd681882, type: 3}
 --- !u!1001 &2107658084
 PrefabInstance:
   m_ObjectHideFlags: 0
