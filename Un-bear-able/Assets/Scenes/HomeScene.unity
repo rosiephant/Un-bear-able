@@ -5990,6 +5990,7 @@ MonoBehaviour:
   markerManager: {fileID: 1373621035}
   tileMapReadController: {fileID: 2107066374}
   maxDistance: 2
+  onTilePickUp: {fileID: 11400000, guid: dc20e4b6c77d607469c005574fbbaab3, type: 2}
 --- !u!61 &1651959209
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10002,7 +10003,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plowed: {fileID: 11400000, guid: ea2a23f556886d543bdbe3cae5bac38c, type: 2}
-  seeded: {fileID: 11400000, guid: 17ef00a198f4823408688fc21a3fc3cf, type: 2}
+  seeded: {fileID: 11400000, guid: 4788f9c7dc2cabd45baf0574b558cfa3, type: 2}
   targetTilemap: {fileID: 267935600}
   cropsSpritePrefab: {fileID: 5832378316230730945, guid: 380d65eb1d8895a48981d75cbd681882, type: 3}
 --- !u!1001 &2107658084
