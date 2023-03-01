@@ -14,4 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Sword
   stackable: 0
-  icon: {fileID: 21300000, guid: 5fe39726aee66ce49b4e02b19eb35b22, type: 3}
+  icon: {fileID: 21300000, guid: 1fefe03ea9ea107448ecafe52689f186, type: 3}
+  onAction: {fileID: 0}
+  onTileMapAction: {fileID: 0}
+  onItemUsed: {fileID: 0}
+  crop: {fileID: 0}
