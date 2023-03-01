@@ -13130,6 +13130,7 @@ MonoBehaviour:
   panel: {fileID: 611945311}
   statusPanel: {fileID: 2082289552}
   toolbarPanel: {fileID: 2108215463}
+  additionalPanel: {fileID: 2062906193}
 --- !u!114 &1651959213
 MonoBehaviour:
   m_ObjectHideFlags: 0

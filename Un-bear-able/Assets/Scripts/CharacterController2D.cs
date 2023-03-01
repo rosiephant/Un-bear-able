@@ -22,14 +22,15 @@ public class CharacterController2D : MonoBehaviour
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
-        motionVector = new Vector2(
-            horizontal,
-            vertical
-            );
+        motionVector.x = horizontal;
+        motionVector.y = vertical;
 
         if (horizontal != 0 || vertical != 0)
         {
-            lastMotionVector = new Vector2(horizontal, vertical).normalized;
+            lastMotionVector = new Vector2(
+            horizontal,
+            vertical
+            ).normalized;
         }
     }
 
