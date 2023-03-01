@@ -9,7 +9,7 @@ public class TilemapCropsManager : TimeAgent
     [SerializeField] TileBase plowed;
     [SerializeField] TileBase seeded;
 
-    Tilemap targetTilemap;
+    [SerializeField] Tilemap targetTilemap;
 
     [SerializeField] GameObject cropsSpritePrefab;
 
