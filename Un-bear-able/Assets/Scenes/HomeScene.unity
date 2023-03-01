@@ -305,6 +305,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   plowed: {fileID: 11400000, guid: ea2a23f556886d543bdbe3cae5bac38c, type: 2}
   seeded: {fileID: 11400000, guid: 4788f9c7dc2cabd45baf0574b558cfa3, type: 2}
+  targetTilemap: {fileID: 0}
   cropsSpritePrefab: {fileID: 5832378316230730945, guid: 380d65eb1d8895a48981d75cbd681882, type: 3}
   container: {fileID: 11400000, guid: 71644c724af35a646a137c5a944a81f9, type: 2}
 --- !u!1001 &832078961
@@ -324,11 +325,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 776620795456500722, guid: 29d0f11b3511847499ac3560df954436, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.26
+      value: -6.04
       objectReference: {fileID: 0}
     - target: {fileID: 776620795456500722, guid: 29d0f11b3511847499ac3560df954436, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.19
+      value: -1.13
       objectReference: {fileID: 0}
     - target: {fileID: 776620795456500722, guid: 29d0f11b3511847499ac3560df954436, type: 3}
       propertyPath: m_LocalPosition.z
@@ -444,7 +445,7 @@ GameObject:
   - component: {fileID: 1205441332}
   - component: {fileID: 1205441331}
   m_Layer: 0
-  m_Name: SceneManager
+  m_Name: PlaceableObjects
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,11 +558,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 776620795456500722, guid: 29d0f11b3511847499ac3560df954436, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.98
+      value: -2.96
       objectReference: {fileID: 0}
     - target: {fileID: 776620795456500722, guid: 29d0f11b3511847499ac3560df954436, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.02
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 776620795456500722, guid: 29d0f11b3511847499ac3560df954436, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3290,11 +3291,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 776620795456500722, guid: 29d0f11b3511847499ac3560df954436, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.38
+      value: -5.84
       objectReference: {fileID: 0}
     - target: {fileID: 776620795456500722, guid: 29d0f11b3511847499ac3560df954436, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.05
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 776620795456500722, guid: 29d0f11b3511847499ac3560df954436, type: 3}
       propertyPath: m_LocalPosition.z
