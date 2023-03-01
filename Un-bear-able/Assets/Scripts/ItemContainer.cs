@@ -36,6 +36,15 @@ public class ItemContainer : ScriptableObject
     public List<ItemSlot> slots;
     public bool isDirty;
 
+    internal void Init()
+    {
+        slots = new List<ItemSlot>();
+        for (int i = 0; i < 36; i++)
+        {
+            slots.Add(new ItemSlot());
+        }
+    }
+
     public void Add(Item item, int count = 1)
     {
         isDirty = true;
@@ -90,7 +99,7 @@ public class ItemContainer : ScriptableObject
             }
         }
     }
-        
+
     internal bool CheckFreeSpace()
     {
         for(int i = 0; i < slots.Count; i++)
