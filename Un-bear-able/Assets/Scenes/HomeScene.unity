@@ -358,6 +358,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1290152940118606424, guid: 0c93ad6c04b9cc74a9ccd19ee026a892, type: 3}
+      propertyPath: targetPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1290152940118606424, guid: 0c93ad6c04b9cc74a9ccd19ee026a892, type: 3}
       propertyPath: sceneNameToTransition
       value: Hi
       objectReference: {fileID: 0}
