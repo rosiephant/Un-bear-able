@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 190e87d00af4c9441ba577dc2b864798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  placeableObjects: {fileID: 11400000, guid: c968a557e67df1a45bbbbec121436968, type: 2}
+  placeableObjects: {fileID: 11400000, guid: 2e67076af4d9b6f42948a7ae70f667e5, type: 2}
   targetTilemap: {fileID: 1998998262}
 --- !u!4 &1205441332
 Transform:
