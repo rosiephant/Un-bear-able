@@ -12252,6 +12252,7 @@ GameObject:
   - component: {fileID: 2107066374}
   - component: {fileID: 2107066375}
   - component: {fileID: 2107066376}
+  - component: {fileID: 2107066377}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -12276,6 +12277,7 @@ MonoBehaviour:
   dragAndDropController: {fileID: 2107066372}
   timeController: {fileID: 2107066371}
   dialogueSystem: {fileID: 1310695227}
+  placeableObjects: {fileID: 2107066377}
 --- !u!4 &2107066369
 Transform:
   m_ObjectHideFlags: 0
@@ -12416,6 +12418,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
   cropsManager: {fileID: 2107066375}
+  objectsManager: {fileID: 2107066377}
 --- !u!114 &2107066375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12443,6 +12446,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screenTint: {fileID: 1313777955}
   cameraConfiner: {fileID: 1445527009}
+--- !u!114 &2107066377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107066367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 251c02f89f3af3a4fb0ed082a964b3d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placeableObjectsManager: {fileID: 0}
 --- !u!1001 &2107658084
 PrefabInstance:
   m_ObjectHideFlags: 0
