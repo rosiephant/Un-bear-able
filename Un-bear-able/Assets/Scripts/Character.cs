@@ -36,7 +36,8 @@ public class Stat
     }
 }
 
-public class Character : MonoBehaviour
+public class Character : MonoBehaviour, IDamageable
+//implement interface members or something @jonathan
 {
     public Stat hp;
     [SerializeField] StatusBar hpBar;
@@ -104,5 +105,41 @@ public class Character : MonoBehaviour
     {
         stamina.SetToMax();
         UpdateStaminaBar();
+    }
+
+    //from here is new code
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            TakeDamage(10);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            Heal(10);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            GetTired(10);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            Rest(10);
+        }
+    }
+
+    public void CalculateDamage(ref int damage)
+    {
+
+    }
+
+    public void ApplyDamage(int damage)
+    {
+        TakeDamage(damage);
+    }
+
+    public void CheckState()
+    {
+
     }
 }
