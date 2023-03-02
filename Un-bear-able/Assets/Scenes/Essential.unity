@@ -6026,6 +6026,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textPrefab: {fileID: 6065074089434615390, guid: bd69c6f014b8a304cb57470e65010cdb, type: 3}
+  horizontalScatter: 0.5
+  verticalScatter: 0.25
+  timeToLive: 0.5
 --- !u!4 &863304841
 Transform:
   m_ObjectHideFlags: 0
@@ -13217,12 +13220,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hp:
-    maxVal: 100
-    currVal: 80
+    maxVal: 80
+    currVal: 100
   hpBar: {fileID: 7940104800950289497}
   stamina:
-    maxVal: 500
-    currVal: 290
+    maxVal: 290
+    currVal: 500
   staminaBar: {fileID: 2615084001006304449}
   isDead: 0
   isExhausted: 0
