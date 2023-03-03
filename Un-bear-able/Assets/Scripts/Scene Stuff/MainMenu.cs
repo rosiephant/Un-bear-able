@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] string nameEssentialScene;
+    [SerializeField] string nameNewGameStartScene;
+
     public void Play()
     {
-        SceneManager.LoadScene("HomeScene");
+        SceneManager.LoadScene(nameEssentialScene, LoadSceneMode.Single);
+        SceneManager.LoadScene(nameNewGameStartScene, LoadSceneMode.Additive);
     }
 
     public void Quit()
