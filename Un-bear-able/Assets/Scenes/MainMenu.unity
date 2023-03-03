@@ -1051,8 +1051,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9a5b6f1182a434b84a51ee6236b8ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameEssentialScene: Essential
-  nameNewGameStartScene: HomeScene
 --- !u!1 &932011206
 GameObject:
   m_ObjectHideFlags: 0

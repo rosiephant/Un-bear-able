@@ -5,13 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    [SerializeField] string nameEssentialScene;
-    [SerializeField] string nameNewGameStartScene;
-
     public void Play()
     {
-        SceneManager.LoadScene(nameEssentialScene, LoadSceneMode.Single);
-        SceneManager.LoadScene(nameNewGameStartScene, LoadSceneMode.Additive);
+        SceneManager.LoadScene("ConnectToServer");
     }
 
     public void Quit()
@@ -24,4 +20,3 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("HomeScene");
     }
 }
-

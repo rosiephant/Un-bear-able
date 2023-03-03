@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterController2D : MonoBehaviour
 {
+    PhotonView view;
+
     Rigidbody2D rigidbody2d;
     [SerializeField] float speed = 2f;
     [SerializeField] float runSpeed = 5f;
@@ -16,29 +19,33 @@ public class CharacterController2D : MonoBehaviour
     void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        view = GetComponent<PhotonView>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (view.IsMine)
         {
-            running = true;
-        }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
-        {
-            running = false;
-        }
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                running = true;
+            }
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                running = false;
+            }
         
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+            float horizontal = Input.GetAxisRaw("Horizontal");
+            float vertical = Input.GetAxisRaw("Vertical");
 
-        motionVector.x = horizontal;
-        motionVector.y = vertical;
+            motionVector.x = horizontal;
+            motionVector.y = vertical;
 
-        if (horizontal != 0 || vertical != 0)
-        {
-            lastMotionVector = new Vector2(horizontal, vertical).normalized;
+            if (horizontal != 0 || vertical != 0)
+            {
+                lastMotionVector = new Vector2(horizontal, vertical).normalized;
+            }
         }
     }
 
