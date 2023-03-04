@@ -9,24 +9,27 @@ public class ChaseEnemy : MonoBehaviour
     [SerializeField] Vector2 attackSize = Vector2.one;
     [SerializeField] int damage = 1;
     [SerializeField] float timeToAttack = 2f;
+    [SerializeField] int Stop;
     float attackTimer;
     
     void Start()
     {
-        player = GameManager.instance.player.transform;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         attackTimer = Random.Range(0, timeToAttack);
     }
 
     void Update()
     {
-        transform.position = Vector3.MoveTowards(
+        if (Vector2.Distance(transform.position, player.position) < Stop)
+        {
+            transform.position = Vector3.MoveTowards(
             transform.position,
             player.position,
             speed * Time.deltaTime
             );
         
-        Attack();
-
+            Attack();
+        }
     }
 
     private void Attack()
@@ -39,7 +42,7 @@ public class ChaseEnemy : MonoBehaviour
 
         Collider2D[] targets = Physics2D.OverlapBoxAll(transform.position, attackSize, 0f);
 
-        for(int i =0; i < targets.Length; i++)
+        for(int i = 0; i < targets.Length; i++)
         {
             Damageable character = targets[i].GetComponent<Damageable>();
             if (character != null)
