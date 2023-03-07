@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7378914152590680041}
   - component: {fileID: 7378914152590680042}
   - component: {fileID: 7378914152590680040}
+  - component: {fileID: 219126095}
   m_Layer: 0
   m_Name: Bear2
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7378914152590680045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.02, y: 0.23, z: 0}
+  m_LocalPosition: {x: 4.02, y: 0.23, z: -1}
   m_LocalScale: {x: 0.05, y: 0.05, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -139,3 +140,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stationary: 0
+--- !u!114 &219126095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7378914152590680045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8ac99bec9beb84cae41d5308c494bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  Stop: 3
+  Close: 1

@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 2769315428779166518}
   - component: {fileID: 3893341912381818846}
   - component: {fileID: -6371437669889004716}
+  - component: {fileID: 1651959228}
   m_Layer: 0
   m_Name: Bear1
   m_TagString: Player
@@ -356,3 +357,15 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &1651959228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2769315428779166500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb38efdae0f0864d9ffef9a16a74bc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
