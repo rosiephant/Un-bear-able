@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: New Dialogue Container
   m_EditorClassIdentifier: 
   line:
-  - You Idiot
-  - Second
-  - Third
+  - Dab
+  - Yeet
+  - Woo
   actor: {fileID: 11400000, guid: a96dde462c6864648969a04e1b5aa91d, type: 2}
