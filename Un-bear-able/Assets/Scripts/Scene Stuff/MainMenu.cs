@@ -7,7 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public void Play()
     {
-        SceneManager.LoadScene("ConnectToServer");
+        SceneManager.LoadScene("HomeScene");
     }
 
     public void Quit()

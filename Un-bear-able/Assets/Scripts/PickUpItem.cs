@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickUpItem : MonoBehaviour
 {
     Transform player;
+    Transform player1;
     [SerializeField] float speed = 5f;
     [SerializeField] float pickUpDistance = 1.5f;
     [SerializeField] float ttl = 10f;
@@ -15,6 +16,7 @@ public class PickUpItem : MonoBehaviour
     private void Awake()
     {
         player = GameManager.instance.player.transform;
+        player1 = GameManager.instance.player1.transform;
     }
 
     public void Set(Item item, int count)
@@ -55,5 +57,29 @@ public class PickUpItem : MonoBehaviour
             }
             Destroy(gameObject);
         }
+
+        float distance1 = Vector3.Distance(transform.position, player1.position);
+        if (distance1 > pickUpDistance)
+        {
+            return;
+        }
+
+        transform.position = Vector3.MoveTowards(
+                transform.position,
+                player1.position,
+                speed * Time.deltaTime
+                );
+        if (distance1 < 0.1f)
+        {
+            if (GameManager.instance.inventoryContainer != null)
+            {
+                GameManager.instance.inventoryContainer.Add(item, count);
+            }
+            else {
+                Debug.LogWarning("No inventory container attached to the game manager");
+            }
+            Destroy(gameObject);
+        }
+
     }
 }
