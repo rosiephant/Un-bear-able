@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Essential.unity
     guid: fb60425ec85903e4583da1d48a97b55a
   - enabled: 1
-    path: Assets/Scenes/ConnectToServer.unity
+    path: Assets/Scenes/SingleOrMulti.unity
     guid: d6087e6dfeb08de4d80f77c41dd6a331
   - enabled: 1
     path: Assets/Scenes/Lobby.unity

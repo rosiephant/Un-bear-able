@@ -37,77 +37,44 @@ public class Stat
 }
 
 public class Character : MonoBehaviour, IDamageable
-//implement interface members or something @jonathan
 {
-    public Stat hp;
-    [SerializeField] StatusBar hpBar;
-    public Stat stamina;
-    [SerializeField] StatusBar staminaBar;
+    public Stat hp1;
+    [SerializeField] StatusBar hpBar1;
 
-    public bool isDead;
-    public bool isExhausted;
+    public bool isDead1;
 
     private void Start()
     {
         UpdateHPBar();
-        UpdateStaminaBar();
-    }
-
-    private void UpdateStaminaBar()
-    {
-        staminaBar.Set(stamina.currVal, stamina.maxVal);
     }
 
     public void TakeDamage(int amount)
     {
-        hp.Subtract(amount);
-        if(hp.currVal <0)
+        hp1.Subtract(amount);
+        if(hp1.currVal <0)
         {
-            isDead = true;
+            isDead1 = true;
         }
         UpdateHPBar();
     }
 
     private void UpdateHPBar()
     {
-        hpBar.Set(hp.currVal, hp.maxVal);
+        hpBar1.Set(hp1.currVal, hp1.maxVal);
     }
 
     public void Heal(int amount)
     {
-        hp.Add(amount);
+        hp1.Add(amount);
         UpdateHPBar();
     }
 
     public void FullHeal()
     {
-        hp.SetToMax();
+        hp1.SetToMax();
         UpdateHPBar();
     }
 
-    public void GetTired(int amount)
-    {
-        stamina.Subtract(amount);
-        if(stamina.currVal < 0)
-        {
-            isExhausted = true;
-        }
-        UpdateStaminaBar();
-    }
-
-    public void Rest(int amount)
-    {
-        stamina.Add(amount);
-        UpdateStaminaBar();
-    }
-
-    public void FullRest(int amount)
-    {
-        stamina.SetToMax();
-        UpdateStaminaBar();
-    }
-
-    //from here is new code
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -117,14 +84,6 @@ public class Character : MonoBehaviour, IDamageable
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             Heal(10);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            GetTired(10);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            Rest(10);
         }
     }
 

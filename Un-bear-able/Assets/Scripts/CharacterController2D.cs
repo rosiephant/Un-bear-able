@@ -6,49 +6,59 @@ using UnityEngine;
 public class CharacterController2D : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
-    [SerializeField] float speed = 2f;
-    [SerializeField] float runSpeed = 5f;
     Vector2 motionVector;
     public Vector2 lastMotionVector;
-    bool running;
+    [SerializeField] float speed;
+    [SerializeField] KeyCode left;
+    [SerializeField] KeyCode right;
+    [SerializeField] KeyCode up;
+    [SerializeField] KeyCode down;
 
-    // Start is called before the first frame update
     void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        Vector3 pos = transform.position; 
     }
 
-    // Update is called once per frame
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if(Input.GetKey(left))
         {
-            running = true;
+            rigidbody2d.velocity = new Vector2(-speed, rigidbody2d.velocity.y);
         }
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        else if(Input.GetKey(right))
         {
-            running = false;
+            rigidbody2d.velocity = new Vector2(speed, rigidbody2d.velocity.y);
         }
-        
-        float horizontal = Input.GetAxisRaw("Horizontal");
-        float vertical = Input.GetAxisRaw("Vertical");
+        else
+        {
+            rigidbody2d.velocity = new Vector2(0, rigidbody2d.velocity.y);
+        }
 
-        motionVector.x = horizontal;
-        motionVector.y = vertical;
+        if(Input.GetKey(up))
+        {
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, speed);
+        }
+        else if(Input.GetKey(down))
+        {
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, -speed);
+        }
+        else
+        {
+            rigidbody2d.velocity = new Vector2(rigidbody2d.velocity.x, 0);
+        }
+
+        float horizontal = transform.position.x;
+        float vertical = transform.position.y;
+
+        motionVector = new Vector2(
+            horizontal,
+            vertical
+            );
 
         if (horizontal != 0 || vertical != 0)
         {
             lastMotionVector = new Vector2(horizontal, vertical).normalized;
         }
-    }
-
-    void FixedUpdate()
-    {
-        Move();
-    }
-
-    private void Move()
-    {
-        rigidbody2d.velocity = motionVector * (running == true ? runSpeed : speed);
     }
 }
