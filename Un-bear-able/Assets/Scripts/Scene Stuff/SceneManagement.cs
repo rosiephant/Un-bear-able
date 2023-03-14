@@ -15,6 +15,16 @@ public class SceneManagement : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void goToSingle()
+    {
+        SceneManager.LoadScene("SinglePlayer");
+    }
+
+    public void goToMulti()
+    {
+        SceneManager.LoadScene("HomeScene");
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         SceneManager.LoadScene("InsideHome");
