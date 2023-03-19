@@ -8,6 +8,7 @@ public class CharacterController2D : MonoBehaviour
     Rigidbody2D rigidbody2d;
     Vector2 motionVector;
     public Vector2 lastMotionVector;
+    Animator animator;
     [SerializeField] float speed;
     [SerializeField] KeyCode left;
     [SerializeField] KeyCode right;
@@ -17,7 +18,8 @@ public class CharacterController2D : MonoBehaviour
     void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
-        Vector3 pos = transform.position; 
+        Vector3 pos = transform.position;
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -60,5 +62,8 @@ public class CharacterController2D : MonoBehaviour
         {
             lastMotionVector = new Vector2(horizontal, vertical).normalized;
         }
+
+        animator.SetFloat("Horizontal", Input.GetAxisRaw("Horizontal"));
+        animator.SetFloat("Vertical", Input.GetAxisRaw("Vertical"));
     }
 }
